@@ -1,0 +1,172 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="author" content="王健 wj@yurendu.com" />
+    <link rel="shortcut icon" href="/views/img/favicon.ico" type="image/x-icon" />
+    <title>盐城师范学院 学生管理系统</title>
+    <link rel="stylesheet" type="text/css" href="/views/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/views/tool/font-awesome/font-awesome.min.css">
+    <!--[if lt IE9]> <script src="/views/tool/html5.js"></script> <![endif]-->
+    <script src="/views/tool/jquery.js"></script>
+</head>
+<body>
+<header>
+    <div id="header-inner">
+        <div id="header-logo">盐城师范学院 学生管理系统</div>
+        <ul id="header-nav">
+                        <li class="nav-current"><a href="/student/profile">钱月莲</a></li>            <li ><a href="/">首页</a></li>
+        </ul>
+    </div>
+    <div id="header-bottom"></div>
+</header>
+<div id="main">
+<style>
+#stu_nav{ border-bottom: 1px solid #d6d6d6; padding-left: 30px; margin: 20px 0 10px 0; position: relative;}
+#stu_nav li{ display: inline-block; border: 1px solid #d6d6d6; padding: 1px; margin-bottom: -1px; border-radius: 3px;}
+#stu_nav li a{ display: block; padding: 0 18px; background: #f3f3f3; color: #888; text-decoration: none;}
+#stu_nav li a:hover{ background: #e3e3e3;}
+#stu_nav_current{ border-bottom: 1px solid #fff !important;}
+#stu_nav_current a{ background: #fff !important; }
+
+#stu_logout{ position: absolute; right: 10px; top: -10px;}
+</style>
+
+
+<ul id="stu_nav">
+    <li id="stu_nav_current"><a href="/student/profile">基本信息</a></li>
+    <li ><a href="/student/zongce">综测分统计</a></li>
+    <li ><a href="/student/leave">请假统计</a></li>
+    <li ><a href="/student/setting">设置</a></li>
+    <div id="stu_logout"> <i class="fa fa-sign-out fa-fw"></i><a href="/home/logout">注销登录</a> </div>
+</ul>
+
+
+<style>
+#stu_content{ color:#666; padding:10px;}
+#stu_content h2{ line-height:24px; font-size:14px; color:#666; border-bottom:1px solid #ddd; clear:both;}
+#stu_content h3{ text-align:center; line-height:24px; font-size:14px; color:#DF6C59; font-weight:normal; border-bottom:1px dashed #ddd; }
+#stu_content div{ margin:10px 0 0 15px; float:left;}
+#stu_content span{ display:block; line-height:24px; text-align:center; color:#555; padding:3px 8px;}
+.post-error{ float:right; position:relative; top:-5px; font-size: 12px; color:#888 !important;}
+.clear{ clear: both; height: 30px;}
+</style>
+
+
+<div id="stu_content">
+    <h2>个人信息<span class="post-error">发现个人信息错误？ <a href="javascript:void(0);">我要报错！</a></span></h2>
+    <div>
+        <h3>姓名</h3>
+        <span>&nbsp;钱月莲&nbsp;</span>
+    </div>
+    <div>
+        <h3>性别</h3>
+        <span>&nbsp;女&nbsp;</span>
+    </div>
+    <div>
+        <h3>电话</h3>
+        <span>&nbsp;18888101732&nbsp;</span>
+    </div>
+    <div>
+        <h3>QQ</h3>
+        <span>&nbsp;1132963976&nbsp;</span>
+    </div>
+    <div>
+        <h3>邮箱</h3>
+        <span>&nbsp;1132963976@qq,com&nbsp;</span>
+    </div>
+    <div>
+        <h3>民族</h3>
+        <span>&nbsp;汉族&nbsp;</span>
+    </div>
+    <div>
+        <h3>身份证号</h3>
+        <span>&nbsp;32020119960723304X&nbsp;</span>
+    </div>
+
+    <div class="clear"></div>
+    <h2>家庭信息</h2>
+    <div>
+        <h3>家长电话</h3>
+        <span>&nbsp;13915273196&nbsp;</span>
+    </div>
+    <div>
+        <h3>家庭住址</h3>
+        <span>&nbsp;无锡市新区南星苑143号1002室&nbsp;</span>
+    </div>
+    <div>
+        <h3>经济状况</h3>
+        <span>&nbsp;良好&nbsp;</span>
+    </div>
+
+    <div class="clear"></div>
+    <h2>在校信息</h2>
+    <div>
+        <h3>入学年份</h3>
+        <span>&nbsp;2014&nbsp;</span>
+    </div>
+    <div>
+        <h3>学院</h3>
+        <span>&nbsp;公共管理学院&nbsp;</span>
+    </div>
+    <div>
+        <h3>专业</h3>
+        <span>&nbsp;公共事业管理&nbsp;</span>
+    </div>
+    <div>
+        <h3>班级</h3>
+        <span>&nbsp;公管141&nbsp;</span>
+    </div>
+    <div>
+        <h3>学号</h3>
+        <span>&nbsp;14163119&nbsp;</span>
+    </div>
+    <div>
+        <h3>班主任</h3>
+        <span>&nbsp;宋传盛&nbsp;</span>
+    </div>
+
+    <div class="clear"></div>
+    <h2>考级考证</h2>
+    <div>
+        <h3>英语四六级</h3>
+        <span>&nbsp;无&nbsp;</span>
+    </div>
+    <div>
+        <h3>计算机等级</h3>
+        <span>&nbsp;无&nbsp;</span>
+    </div>
+    <div>
+        <h3>软考</h3>
+        <span>&nbsp;无&nbsp;</span>
+    </div>
+    <div>
+        <h3>考研/考公</h3>
+        <span>&nbsp;无&nbsp;</span>
+    </div>
+
+    <div class="clear"></div>
+    <h2>工作 / 党团 / 宿舍 / 奖惩</h2>
+    <div>
+        <h3>学生干部</h3>
+        <span>&nbsp;副团支书&nbsp;</span>
+    </div>
+    <div>
+        <h3>政治面貌</h3>
+        <span>&nbsp;团员&nbsp;</span>
+    </div>
+    <div>
+        <h3>宿舍信息</h3>
+        <span>&nbsp;11B-120-1&nbsp;</span>
+    </div>
+    <div>
+        <h3>奖学金</h3>
+        <span>&nbsp;一次单项&nbsp;</span>
+    </div>
+    <div>
+        <h3>处分</h3>
+        <span>&nbsp;无&nbsp;</span>
+    </div>
+</div>
+<div class="clear"></div></div>
+<footer>© 2014 ~ 2016. All Rights Reserved. 师生在使用过程中如有疑问或发现错误请向开发者反馈: <strong><a href="https://www.yurendu.com/" target="_blank">王健</a></strong></footer>
+<script src="/views/tool/layer/layer.min.js"></script>
+<script src="/views/js/common.js"></script>
+</body>
+</html>
